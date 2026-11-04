@@ -1,0 +1,389 @@
+/* MsgCraft pages. No external fonts, images or scripts. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #f5f7f8;
+  --surface: #ffffff;
+  --surface-alt: #eef1f3;
+  --footer: #f5f7f8; /* --bg, not --surface-alt: the 14px links need 4.5:1 */
+  --border: #d9dee2;
+  --text: #0b0e10;
+  --muted: #50575e;
+  --primary: #007d70;
+  --primary-soft: #e3fbf5;
+  --warning: #945f00;
+  --warning-soft: #fff1cf;
+  --glass: rgba(245, 247, 248, 0.88);
+  --ambient: rgba(20, 200, 180, 0.14);
+  --gutter: 16px;
+  --measure: 35rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d0f;
+    --surface: #16191c;
+    --surface-alt: #262a2f;
+    --footer: #262a2f;
+    --border: #30363b;
+    --text: #f2f5f7;
+    --muted: #9ca5ae;
+    --primary: #22e6cc;
+    --primary-soft: #07372f;
+    --warning: #ffc53d;
+    --warning-soft: #3a2e14;
+    --glass: rgba(11, 13, 15, 0.88);
+    --ambient: rgba(34, 230, 204, 0.1);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image: radial-gradient(48rem 24rem at 0 0, var(--ambient), transparent);
+  background-repeat: no-repeat;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+[lang="ko"] {
+  word-break: keep-all;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a,
+code {
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+}
+
+/* Sticky bar: the way home and the language jump. */
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--glass);
+  border-bottom: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 6px var(--gutter);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+
+.langs {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: var(--surface-alt);
+  border-radius: 999px;
+}
+
+.langs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  word-break: normal;
+}
+
+.langs a:hover {
+  background: var(--surface);
+}
+
+/* Column */
+
+main {
+  width: 100%;
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.lang-block {
+  padding: 32px 0 48px;
+  scroll-margin-top: 64px;
+}
+
+.lang-block + .lang-block {
+  border-top: 2px solid var(--border);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 40px 0 8px;
+  font-size: 1.3125rem;
+  line-height: 1.3;
+  font-weight: 700;
+  scroll-margin-top: 72px;
+}
+
+h3 {
+  margin: 28px 0 4px;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+ul,
+ol {
+  margin: 0 0 12px;
+  padding-left: 1.25em;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+li::marker {
+  color: var(--muted);
+}
+
+/* Landing */
+
+.app-icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+}
+
+.lede {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+}
+
+.disclaimer {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.status {
+  margin: 20px 0 0;
+  padding: 14px 16px;
+  background: var(--warning-soft);
+  border-radius: 14px;
+}
+
+.status strong {
+  color: var(--warning);
+}
+
+.facts {
+  margin: 28px 0 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.facts div {
+  padding: 12px 16px;
+}
+
+.facts div + div {
+  border-top: 1px solid var(--border);
+}
+
+.facts dt {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.facts dd {
+  margin: 2px 0 0;
+}
+
+@media (min-width: 560px) {
+  .facts div {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .facts dd {
+    margin: 0;
+  }
+}
+
+/* Legal pages */
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.summary {
+  margin: 24px 0 0;
+  padding: 16px;
+  background: var(--primary-soft);
+  border-radius: 14px;
+}
+
+.summary h2 {
+  margin-top: 0;
+  font-size: 1.0625rem;
+}
+
+.summary ul {
+  margin-bottom: 0;
+}
+
+.toc {
+  margin: 24px 0 0;
+}
+
+.toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc li {
+  margin: 0;
+}
+
+.toc a {
+  display: block;
+  padding: 6px 0;
+}
+
+/* Footer */
+
+footer {
+  background: var(--footer);
+  border-top: 1px solid var(--border);
+}
+
+.foot-inner {
+  width: 100%;
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 24px var(--gutter) 32px;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.foot-links {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.foot-links li {
+  margin: 0;
+}
+
+.foot-links a {
+  display: inline-block;
+  padding: 6px 0;
+}
+
+.foot-note {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+@media print {
+  .bar {
+    position: static;
+  }
+
+  .langs {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+  }
+}
