@@ -31,7 +31,7 @@
 <section class="lang-block" id="en" lang="en">
   <p class="eyebrow">English</p>
   <h1>MsgCraft Privacy Policy</h1>
-  <p class="meta">Effective date: November 6, 2026<br>Developer: MsgCraft developer (an individual)<br>Contact: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
+  <p class="meta">Effective date: November 10, 2026<br>Developer: MsgCraft developer (an individual)<br>Contact: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
 
   <p>MsgCraft ("the app") is an unofficial app for reading and sending chat on Minecraft: Java Edition servers.<br>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
 
@@ -72,6 +72,7 @@
     <li>The messages and commands you set to send automatically (on connect, repeating), with the server settings</li>
     <li>Downloaded game language files (used to display translated chat messages)</li>
     <li>Whether you bought Pro (a saved value and the time it was last updated, so the features work without internet). No card details or order history are stored</li>
+    <li>If you turned Pro on with a MsgCraft promo code (Android): that code, the Minecraft player UUID it matches and when you entered it. The app checks the code on the device and sends it nowhere</li>
   </ul>
   <p>The app never sees or stores your Microsoft account password. You sign in on Microsoft's own sign-in page.</p>
 
@@ -92,7 +93,7 @@
 
   <h3>(3) Mojang public file servers</h3>
   <p>To display translated chat, the app downloads game language files from <code>piston-meta.mojang.com</code> and <code>resources.download.minecraft.net</code> when it starts: on first launch, before you have accepted the terms, then about once a week, and when you switch language. No personal data is sent (your IP address is visible to the server, as with any internet request).</p>
-  <p>With the bubbles chat style and "Show player faces" on, the app downloads the player skin images a server names from <code>textures.minecraft.net</code>. No personal data is sent here either (your IP address is visible). The skin ids and face images of players shown in chat stay on this device; turning the option off deletes them, and deleting a server or its chat history deletes that server's entries.</p>
+  <p>With "Show player faces" on (the default), the app downloads the player skin images a server names, and your accounts' own skin images, from <code>textures.minecraft.net</code> and shows them in chat bubbles, the player list and the account list. For players whose skin it does not know (such as muted players) it asks <code>sessionserver.mojang.com</code> for that player's public profile by their UUID (no token is sent). No personal data is sent here either (your IP address is visible). The skin ids and face images of players shown stay on this device; turning the option off deletes them, and deleting a server or its chat history deletes that server's entries.</p>
 
   <h3>(4) Server address lookup (DNS-over-HTTPS)</h3>
   <p>Whenever the app connects to, or refreshes the status of, a server named by domain name without a port (or with the default port 25565), including a server another server moves you to, it looks up the server's SRV record by sending the domain name to Cloudflare's public DNS-over-HTTPS service (<code>cloudflare-dns.com</code>), or to Google's (<code>dns.google</code>) if Cloudflare does not answer. These services see your IP address and the server address looked up. Addresses given as an IP address or with a port other than 25565 are not looked up.</p>
@@ -150,7 +151,7 @@
 <section class="lang-block" id="ko" lang="ko">
   <p class="eyebrow">한국어</p>
   <h1>MsgCraft 개인정보처리방침</h1>
-  <p class="meta">시행일: 2026년 11월 6일<br>개발자: MsgCraft 개발자 (개인)<br>문의: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
+  <p class="meta">시행일: 2026년 11월 10일<br>개발자: MsgCraft 개발자 (개인)<br>문의: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
 
   <p>MsgCraft(이하 "앱")는 마인크래프트: 자바 에디션 서버의 채팅을 휴대폰에서 읽고 보내는 비공식 앱입니다.<br>마인크래프트 공식 제품이 아닙니다. Mojang 또는 Microsoft가 승인하지 않았으며 이들과 관련이 없습니다.</p>
 
@@ -191,6 +192,7 @@
     <li>자동으로 보내도록 설정한 메시지와 명령어(접속 시, 반복): 서버 설정과 함께 저장</li>
     <li>내려받은 게임 언어 파일(채팅 번역 표시용)</li>
     <li>Pro를 구매했는지 여부(인터넷이 없어도 기능이 동작하도록 저장한 값과 마지막으로 바뀐 시각). 카드 정보, 주문 내역은 저장하지 않습니다</li>
+    <li>MsgCraft 쿠폰 코드로 Pro를 켠 경우(Android): 그 코드, 코드에 맞는 마인크래프트 플레이어 UUID, 등록한 시각. 코드는 앱이 기기 안에서 확인하며 어디에도 보내지 않습니다</li>
   </ul>
   <p>앱은 Microsoft 계정 비밀번호를 보거나 저장하지 않습니다. 로그인은 Microsoft의 로그인 페이지에서 이루어집니다.</p>
 
@@ -212,7 +214,7 @@
 
   <h3>(3) Mojang 공개 파일 서버</h3>
   <p>채팅 번역을 표시하려고 앱을 시작할 때 <code>piston-meta.mojang.com</code>, <code>resources.download.minecraft.net</code> 에서 게임 언어 파일을 내려받습니다. 약관에 동의하기 전인 첫 실행 때 받고, 그 뒤에는 약 일주일마다, 그리고 언어를 바꿀 때 받습니다. 이때 개인정보는 보내지 않습니다(통신 특성상 IP 주소는 전달됩니다).</p>
-  <p>말풍선 채팅 모양에서 '플레이어 얼굴 표시'를 켜 두면, 서버가 알려 준 플레이어 스킨 이미지를 <code>textures.minecraft.net</code> 에서 내려받습니다. 이때도 개인정보는 보내지 않습니다(IP 주소는 전달됩니다). 채팅에 표시된 플레이어의 스킨 식별자와 얼굴 이미지는 이 기기에만 저장되며, 이 옵션을 끄면 삭제됩니다. 서버를 삭제하거나 채팅 기록을 지우면 그 서버의 정보도 삭제됩니다.</p>
+  <p>'플레이어 얼굴 표시'를 켜 두면(기본으로 켜져 있음), 서버가 알려 준 플레이어 스킨 이미지와 내 계정의 스킨 이미지를 <code>textures.minecraft.net</code> 에서 내려받아 채팅 말풍선, 플레이어 목록, 계정 목록에 보여 줍니다. 차단 목록처럼 스킨 정보를 모르는 플레이어는 그 플레이어의 UUID로 <code>sessionserver.mojang.com</code> 에 공개 프로필을 물어 스킨을 찾습니다(토큰은 보내지 않습니다). 이때도 개인정보는 보내지 않습니다(IP 주소는 전달됩니다). 화면에 표시된 플레이어의 스킨 식별자와 얼굴 이미지는 이 기기에만 저장되며, 이 옵션을 끄면 삭제됩니다. 서버를 삭제하거나 채팅 기록을 지우면 그 서버의 정보도 삭제됩니다.</p>
 
   <h3>(4) 서버 주소 조회(DNS-over-HTTPS)</h3>
   <p>포트 없이(또는 기본 포트 25565를 적어) 도메인 이름으로 지정한 서버(다른 서버가 옮겨 보내는 서버 포함)에 접속하거나 서버 목록에서 상태를 확인할 때마다, 서버 주소(도메인 이름)의 SRV 레코드를 Cloudflare(<code>cloudflare-dns.com</code>)의 공개 DNS-over-HTTPS 서비스에 보내 조회합니다(응답이 없으면 Google(<code>dns.google</code>)). 이때 이 서비스들은 여러분의 IP 주소와 조회한 서버 주소를 보게 됩니다. IP 주소나 25565가 아닌 포트를 적은 주소는 조회하지 않습니다.</p>
