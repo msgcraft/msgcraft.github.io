@@ -31,16 +31,16 @@
 <section class="lang-block" id="en" lang="en">
   <p class="eyebrow">English</p>
   <h1>MsgCraft Privacy Policy</h1>
-  <p class="meta">Effective date: November 11, 2026<br>Developer: MsgCraft developer (an individual)<br>Contact: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
+  <p class="meta">Effective date: November 12, 2026<br>Developer: MsgCraft developer (an individual)<br>Contact: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
 
   <p>MsgCraft ("the app") is an unofficial app for reading and sending chat on Minecraft: Java Edition servers.<br>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
 
   <div class="summary">
     <h2>Summary</h2>
     <ul>
-      <li>The developer runs no servers, and the app sends the developer nothing. If you buy a paid item, the developer can see only the sales totals and order information that Apple or Google shows in its store console (see 2(5)). If you send a report or support e-mail yourself, the developer receives that e-mail (see 2(6)).</li>
+      <li>The developer runs no servers, and the app sends the developer nothing. If you buy a paid item, the developer can see only the sales totals and order information that Apple or Google shows in its store console (see 2(5)). If you send a report or support e-mail yourself, the developer receives that e-mail (see 2(6)). If you open a ticket on the MsgCraft Discord support server, the developer receives what you post there (see 2(7)).</li>
       <li>The app stores its data only on your device (it is not included in Android's Google Drive backup; on iPhone it can be part of your own iCloud or computer backup of the device).</li>
-      <li>The app connects directly to the Minecraft servers you choose and any server they move you to (see 2(1)), to the Microsoft, Xbox and Mojang services needed for sign-in, to Mojang's file servers for language files, to Cloudflare or Google to look up server addresses, and to the App Store or Google Play. Some of these connections happen automatically, for example when the app starts (see section 2).</li>
+      <li>The app connects directly to the Minecraft servers you choose and any server they move you to (see 2(1)), to the Microsoft, Xbox and Mojang services needed for sign-in, to Mojang's file servers for language files, to Mojang's profile services when you look up a player or faces are shown, to Cloudflare or Google to look up server addresses, and to the App Store or Google Play. Some of these connections happen automatically, for example when the app starts (see section 2).</li>
       <li>No ads, no analytics, no tracking.</li>
       <li>Paid items are paid through Apple or Google only. The developer never receives card or payment details.</li>
     </ul>
@@ -71,6 +71,8 @@
     <li>Passwords you enter for a server's login plugin (auto login), kept in the operating system's secure storage on this device only</li>
     <li>The messages and commands you set to send automatically (on connect, repeating), with the server settings</li>
     <li>The commands you save as quick-command buttons on the chat screen, with the server settings</li>
+    <li>The players you found with "Find a player" (the last 10): their Minecraft name, UUID and when you found them</li>
+    <li>Your friends list (up to 100): the Minecraft name, the UUID (for a Mojang account) and the date added of each player you starred on a player card. The list itself is never sent to the developer or anyone else (with "Show player faces" on, a friend's UUID is used to fetch their face from Mojang's public profile, see 2(3)). "Tell me when a friend joins" only looks at the player list of a server you are already connected to in the app and makes the alert on the device; when friends were online is never stored</li>
     <li>Downloaded game language files (used to display translated chat messages)</li>
     <li>Whether you bought Pro (a saved value and the time it was last updated, so the features work without internet). No card details or order history are stored</li>
     <li>If you turned Pro on with a MsgCraft promo code (Android): that code, the Minecraft player UUID it matches and when you entered it. The app checks the code on the device and sends it nowhere</li>
@@ -78,10 +80,10 @@
   <p>The app never sees or stores your Microsoft account password. You sign in on Microsoft's own sign-in page.</p>
 
   <h2 id="en-2">2. Data the app sends, only for the app to work and for the features you use</h2>
-  <p>Some of these connections happen automatically, without a tap: (1) when the app reconnects, when a server moves you, or when the server list appears and the app checks the status of your saved servers; (2) and (4) when one of those connections needs them; and (3) and (5) when the app starts.</p>
+  <p>Some of these connections happen automatically, without a tap: (1) when the app reconnects, when a server moves you, when the server list appears and the app checks the status of your saved servers, or when you open a server's info page and its status is missing or more than a minute old; (2) and (4) when one of those connections needs them; (3) when the app starts and, with "Show player faces" on, whenever faces appear on screen (for example in chat, the player list, the friends and blocked lists, player cards, the recent lookups of "Find a player", or the server list with "Show who is online in the server list" on); and (5) when the app starts.</p>
 
   <h3>(1) Minecraft servers you choose, and servers they move you to</h3>
-  <p>When you connect, the app sends that server your player name, player UUID, the chat messages and commands you send, standard game-client settings (such as language and view distance) and the public key used for chat signing. While you type a command, the text typed so far is sent to that server to get completions, as in the game, even if you never send it. When you turn them on, it also sends your login-plugin password (auto login; only to the server address you saved it for), the messages and commands you set to send automatically, and an arm swing about once a minute (AFK-kick prevention). Servers that use a login plugin usually do not encrypt the connection, so the login-plugin password travels to that server unencrypted; use a password you use nowhere else. Checking a server's status (player count) also connects to that server; the app does this by itself when the server list appears.</p>
+  <p>When you connect, the app sends that server your player name, player UUID, the chat messages and commands you send, standard game-client settings (such as language, view distance and whether your name may appear in other people's server lists) and the public key used for chat signing. While you type a command, the text typed so far is sent to that server to get completions, as in the game, even if you never send it. When you turn them on, it also sends your login-plugin password (auto login; only to the server address you saved it for), the messages and commands you set to send automatically, and an arm swing about once a minute (AFK-kick prevention). Servers that use a login plugin usually do not encrypt the connection, so the login-plugin password travels to that server unencrypted; use a password you use nowhere else. Checking a server's status (player count) also connects to that server; the app does this by itself when the server list appears, and when you open a server's info page and its status is missing or more than a minute old. When a server's status reply names some of the players online, the app keeps those names in memory only, to show them in the server list and on the server info page, and never saves them (they are gone when the app closes).</p>
   <p>The app can also connect without a tap. It rejoins when you return to it after your phone paused it. With Pro, auto reconnect is on by default and tries up to 5 times when a connection drops; rejoining after a kick happens only if you turn that on. On Android it stays connected in the background by default, with an ongoing notification, until you disconnect or turn this off in Settings.</p>
   <p>A server can move you to another server (a Minecraft feature called transfer). The app follows automatically and shows a line in the chat. The new server receives the same player data and any cookies the first server stored, and if it is an online-mode server, the join in (2) happens for it too. It never receives your saved login-plugin password or your automatic messages.</p>
   <p>These servers are run by third parties unrelated to the developer, under their own policies. Server operators can see your IP address and chat. Some servers (offline-mode servers) do not encrypt traffic.</p>
@@ -92,9 +94,10 @@
   <p>When you join an online-mode server, the app also sends your Minecraft access token, player UUID and a server hash to <code>sessionserver.mojang.com</code>.</p>
   <p>Microsoft's privacy statement applies: <a href="https://privacy.microsoft.com">https://privacy.microsoft.com</a></p>
 
-  <h3>(3) Mojang public file servers</h3>
+  <h3>(3) Mojang public file servers and player profiles</h3>
   <p>To display translated chat, the app downloads game language files from <code>piston-meta.mojang.com</code> and <code>resources.download.minecraft.net</code> when it starts: on first launch, before you have accepted the terms, then about once a week, and when you switch language. No personal data is sent (your IP address is visible to the server, as with any internet request).</p>
-  <p>With "Show player faces" on (the default), the app downloads the player skin images a server names, and your accounts' own skin images, from <code>textures.minecraft.net</code> and shows them in chat bubbles, the player list and the account list. For players whose skin it does not know (such as muted players) it asks <code>sessionserver.mojang.com</code> for that player's public profile by their UUID (no token is sent). No personal data is sent here either (your IP address is visible). The skin ids and face images of players shown stay on this device; turning the option off deletes them, and deleting a server or its chat history deletes that server's entries.</p>
+  <p>With "Show player faces" on (the default), the app downloads the player skin images a server names, and your accounts' own skin images, from <code>textures.minecraft.net</code> and shows them in chat bubbles, the player list, the account list and player cards. When you tap "View in 3D" on a player card, it downloads that player's skin and cape images from the same place and shows them in 3D. For players whose skin it does not know (such as muted players and friends) it asks <code>sessionserver.mojang.com</code> for that player's public profile by their UUID (no token is sent) to find the skin (and, for the 3D view, the arm model and the cape). It never asks this for UUIDs made by servers without Mojang sign-in (version 3). When you long-press a server in the server list or tap the player count on a server's info page to see who is online, turn on "Show who is online in the server list" or open a player card, it finds that player's face the same way. No personal data is sent here either (your IP address is visible). The skin ids and face images of players shown stay on this device (faces of players seen in the server list or on a server's info page while the app is not connected to that server, faces in the friends list, faces a player card found by the public profile, and the skin and cape images downloaded for the 3D view are kept in memory only, never saved; while the app is connected to that server, the list of who is online shows that server's own player list, and those faces are kept like the player list's); turning the option off deletes them, and deleting a server or its chat history deletes that server's entries.</p>
+  <p>When you tap Find in "Find a player" (in Settings, or "Look up at Mojang" in a player list search), the app sends the player name you typed to <code>api.minecraftservices.com</code> (or, if that cannot be reached or answers with a server error, to <code>api.mojang.com</code>), or the UUID you typed to <code>sessionserver.mojang.com</code>, and receives that player's public profile (name and UUID). It sends this only when you tap, never while you type, and sends no token or account details of yours (your IP address is visible). It never sends UUIDs made by servers without Mojang sign-in (version 3). The last 10 players found (name, UUID and when) are stored on this device only, until you tap "Clear history". The faces of the player found and of the recent lookups are found the same way as above and kept in memory only (with "Show player faces" on, the recent lookups' faces are asked for without a tap when the screen opens).</p>
 
   <h3>(4) Server address lookup (DNS-over-HTTPS)</h3>
   <p>Whenever the app connects to, or refreshes the status of, a server named by domain name without a port (or with the default port 25565), including a server another server moves you to, it looks up the server's SRV record by sending the domain name to Cloudflare's public DNS-over-HTTPS service (<code>cloudflare-dns.com</code>), or to Google's (<code>dns.google</code>) if Cloudflare does not answer. These services see your IP address and the server address looked up. Addresses given as an IP address or with a port other than 25565 are not looked up.</p>
@@ -105,14 +108,25 @@
   <h3>(6) Report and support e-mails (only when you send one yourself)</h3>
   <p>When you report a message or a player, the app prefills an e-mail to <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a> in your mail app, or copies the same text for you. It contains the server's name and address, the reported player's name and UUID, the time and the message, with a space for details you add yourself. Tapping the support address on the app's About screen opens a blank e-mail to the same address in your mail app, and you write the content. The app does not send either by itself; each reaches the developer only if you review and send it. If you do, the developer receives that content, your e-mail address and your sender name (the name set on your mail account), and uses them to handle the report or question. When needed, the developer passes on to the server's operators what they need to act on a report (the server, the reported player, the time and the message), not your e-mail address or sender name. The e-mail is stored in the developer's Gmail mailbox (Google, outside Korea); section 4 says how long.</p>
 
+  <h3>(7) Discord support (only when you open a ticket yourself)</h3>
+  <p>Tapping "Ask on Discord" on the app's About screen opens the invite link to the MsgCraft Discord support server in the Discord app or your browser. The app only opens the link: it adds none of your data to the link and sends nothing to Discord. Discord is optional; you can send the same request to <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a> instead, and not using Discord has no effect on the app.</p>
+  <p>When you choose question, suggestion or report on that server, a private channel opens that only you and the developer (staff) can see. The developer receives your Discord username, display name, avatar and user ID, and the messages, attachments and form answers you post in that channel, with the times the ticket was opened and closed, and uses them to handle your request. In that channel you and the staff can see each other's Discord profiles, and other people who joined the server can see your name and avatar in the server's member list. Never send passwords or sign-in codes.</p>
+  <p>This data is sent over the internet to the following services when you post it, where it is stored or processed. Section 4 says how long the developer keeps it.</p>
+  <ul>
+    <li>Discord Inc. (United States and other countries where Discord operates, <a href="https://discord.com/privacy">https://discord.com/privacy</a>): all of the data above. It stores the ticket channel, the transcript files and the log channel's messages until the developer deletes them.</li>
+    <li>Ticket Tool (its operator and server location are not published; its terms are governed by the law of Missouri, USA; <a href="mailto:support@tickettool.xyz">support@tickettool.xyz</a>): your Discord username and user ID, your form answers and the ticket's messages. It opens and closes ticket channels, and reads the messages to make transcript files, which it posts to the Discord server above. Ticket Tool states that it keeps no copies of transcripts, but its own privacy policy (<a href="https://tickettool.xyz/privacy-policy">https://tickettool.xyz/privacy-policy</a>) sets no fixed period for how long it keeps other data.</li>
+  </ul>
+  <p>Your Discord account itself is handled by Discord under its own privacy policy, and Discord's age requirements apply.</p>
+
   <p>The services in (2) to (5) are located outside Korea, mainly in the United States. The developer does not transfer your data to them; your device connects to them directly when the app needs them, in some cases automatically as described above.</p>
-  <p>The outside services the developer chose are the DNS services in (4) and the Gmail mailbox in (6). For these the developer relies on the providers' published privacy commitments for protection equal to this policy's: Cloudflare (<a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</a>), Google Public DNS (<a href="https://developers.google.com/speed/public-dns/privacy">https://developers.google.com/speed/public-dns/privacy</a>) and Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). The other services above are the game's and the stores' own services, under their own policies. Operators of Minecraft servers are outside this commitment: the developer does not choose them and cannot promise how they protect your data.</p>
+  <p>Among the outside services the developer chose, for the DNS services in (4) and the Gmail mailbox in (6) the developer relies on the providers' published privacy commitments for protection equal to this policy's: Cloudflare (<a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</a>), Google Public DNS (<a href="https://developers.google.com/speed/public-dns/privacy">https://developers.google.com/speed/public-dns/privacy</a>) and Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). The other services above are the game's and the stores' own services, under their own policies. Operators of Minecraft servers are outside this commitment: the developer does not choose them and cannot promise how they protect your data.</p>
+  <p>Discord and Ticket Tool in (7) are also services the developer chose, but without that commitment. The developer cannot sign a separate agreement with them, so their published terms and privacy policies apply (<a href="https://discord.com/privacy">https://discord.com/privacy</a>, <a href="https://tickettool.xyz/privacy-policy">https://tickettool.xyz/privacy-policy</a>). If that concerns you, please write by e-mail instead of using Discord.</p>
 
   <h2 id="en-3">3. What we do not collect</h2>
   <ul>
     <li>No advertising, analytics, tracking or crash-reporting tools.</li>
     <li>No access to location, contacts, photos, microphone or camera.</li>
-    <li>The developer has no servers, so the developer cannot see your chat or account data. The only exception is a report or support e-mail you send yourself (see 2(6)).</li>
+    <li>The developer has no servers, so the developer cannot see your chat or account data. The only exceptions are a report or support e-mail you send yourself and a Discord support ticket you open yourself (see 2(6) and 2(7)).</li>
     <li>Notifications are local notifications created on your device (no push notification server).</li>
     <li>App stores (Google Play, App Store) may collect data such as download statistics and purchases under their own policies.</li>
   </ul>
@@ -120,6 +134,8 @@
   <h2 id="en-4">4. Retention and deletion</h2>
   <ul>
     <li>Data stays on your device until you delete it. Chat history keeps only the latest 2,000 lines per server.</li>
+    <li>The recent lookups of "Find a player" (the last 10) can be deleted with "Clear history" on that screen.</li>
+    <li>Friends can be removed one by one in Settings &gt; Players &gt; Friends.</li>
     <li>Removing an account in the app's settings deletes that account's tokens and signing key from the device.</li>
     <li>You can clear a server's chat history from the chat screen menu; deleting a server also deletes its chat history, and removing an account deletes its sign-in data.</li>
     <li>The purchase record itself stays with your Apple or Google account; after reinstalling, use Restore purchases.</li>
@@ -127,18 +143,20 @@
     <li>You can revoke the app's access to your Microsoft account at any time at <a href="https://account.live.com/consent/Manage">https://account.live.com/consent/Manage</a></li>
     <li>Deleting a server or an account, or changing a server's address, deletes the login-plugin passwords saved for it. The same iPhone Keychain note applies: leftovers are erased the next time the app is opened.</li>
     <li>You can share a server's chat log with another app through the system share sheet; the app does not send it anywhere by itself. A shared chat log contains the names and messages of other players in that server's chat (players you muted are left out); share it only where appropriate.</li>
+    <li>You can send a saved server's name and address, with a link that adds it in the app (https://msgcraft.github.io/add/), to another app through the system share sheet ("Share" in the server card's menu or on the server info page). Nothing else goes in (no account or other settings), and the app does not send it anywhere by itself. The link's web page reads the name and address from the part of the link after "#" only inside the browser of whoever opens it, and neither stores nor sends them (the part after "#" is never sent to the web server).</li>
     <li>Chat you already sent to a Minecraft server may be kept by that server's operators; the developer cannot delete it. Please contact the server's operators.</li>
     <li>A report or support e-mail you sent (see 2(6)) stays in the developer's Gmail mailbox for one year after it is handled, then is deleted from the mailbox. You can ask for it to be deleted sooner at <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a>. What was already passed to a server's operators is held by them; please contact them about it.</li>
+    <li>A Discord support ticket (see 2(7)) is deleted when it has been handled. The transcript file and log messages kept in staff-only channels are kept for one year after the ticket is handled, then deleted. You can ask for earlier deletion in the ticket or at <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a>. Your Discord account and messages you post elsewhere are managed by Discord: delete them in Discord or ask Discord.</li>
   </ul>
 
   <h2 id="en-5">5. Children</h2>
   <p>The app is not directed at children under 13. In the Republic of Korea, users under 14 need the consent of a legal guardian.</p>
 
   <h2 id="en-6">6. Security</h2>
-  <p>Sign-in tokens are kept in the operating system's secure storage. Traffic to Microsoft, Xbox and Mojang uses HTTPS, and traffic to online-mode servers uses the encryption of the Minecraft protocol. The app does not write sign-in tokens or server passwords to its logs or chat history.</p>
+  <p>Sign-in tokens are kept in the operating system's secure storage. Traffic to Microsoft, Xbox and Mojang uses HTTPS, and traffic to online-mode servers uses the encryption of the Minecraft protocol. The app does not write sign-in tokens or server passwords to its logs or chat history. Discord ticket channels are visible only to the person who opened them and staff, and transcripts and the log channel to staff only (the Ticket Tool bot has only the permissions it needs to work); staff Discord accounts use two-factor authentication, and transcripts are not saved anywhere else, such as Google Drive.</p>
 
   <h2 id="en-7">7. Your rights</h2>
-  <p>The data the app keeps stays on your device, so you can view, correct and delete it directly in the app. A report or support e-mail you sent is the exception: to view, correct or delete the copy the developer holds, write to the address below. A legal guardian of a user under 14 can exercise these rights on the child's behalf, in the app on the device or by e-mail to the address below. Purchase and order records are managed by Apple or Google and cannot be deleted in the app; make such requests through your account with that company or its support. For questions, including about the order information the developer can see in the store consoles, contact us at the address below.</p>
+  <p>The data the app keeps stays on your device, so you can view, correct and delete it directly in the app. A report or support e-mail you sent and a Discord support ticket you opened are the exceptions: to view, correct or delete the copy the developer holds, write to the address below (or, for a Discord ticket, ask in the ticket). A legal guardian of a user under 14 can exercise these rights on the child's behalf, in the app on the device or by e-mail to the address below. Purchase and order records are managed by Apple or Google and cannot be deleted in the app; make such requests through your account with that company or its support. For questions, including about the order information the developer can see in the store consoles, contact us at the address below.</p>
 
   <h2 id="en-8">8. Contact</h2>
   <p>MsgCraft developer / <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
@@ -152,16 +170,16 @@
 <section class="lang-block" id="ko" lang="ko">
   <p class="eyebrow">한국어</p>
   <h1>MsgCraft 개인정보처리방침</h1>
-  <p class="meta">시행일: 2026년 11월 11일<br>개발자: MsgCraft 개발자 (개인)<br>문의: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
+  <p class="meta">시행일: 2026년 11월 12일<br>개발자: MsgCraft 개발자 (개인)<br>문의: <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>
 
   <p>MsgCraft(이하 "앱")는 마인크래프트: 자바 에디션 서버의 채팅을 휴대폰에서 읽고 보내는 비공식 앱입니다.<br>마인크래프트 공식 제품이 아닙니다. Mojang 또는 Microsoft가 승인하지 않았으며 이들과 관련이 없습니다.</p>
 
   <div class="summary">
     <h2>요약</h2>
     <ul>
-      <li>개발자는 서버를 운영하지 않으며, 앱이 개발자에게 보내는 정보는 없습니다. 유료 항목을 구매하면 Apple 또는 Google이 스토어 콘솔에서 보여 주는 판매 집계와 주문 정보만 개발자가 볼 수 있습니다(아래 2장 (5)). 신고 메일이나 문의 메일을 직접 보내면 개발자가 그 메일을 받습니다(아래 2장 (6)).</li>
+      <li>개발자는 서버를 운영하지 않으며, 앱이 개발자에게 보내는 정보는 없습니다. 유료 항목을 구매하면 Apple 또는 Google이 스토어 콘솔에서 보여 주는 판매 집계와 주문 정보만 개발자가 볼 수 있습니다(아래 2장 (5)). 신고 메일이나 문의 메일을 직접 보내면 개발자가 그 메일을 받습니다(아래 2장 (6)). 디스코드 문의 서버에서 문의를 열면 개발자가 그 내용을 받습니다(아래 2장 (7)).</li>
       <li>앱의 데이터는 여러분의 기기에만 저장됩니다(안드로이드의 Google 드라이브 백업에는 들어가지 않으며, iPhone에서는 사용자 본인의 iCloud 또는 컴퓨터 기기 백업에 포함될 수 있습니다).</li>
-      <li>앱은 여러분이 고른 마인크래프트 서버와 그 서버가 옮겨 보내는 서버(2장 (1)), 로그인에 필요한 Microsoft·Xbox·Mojang 서비스, 언어 파일을 받는 Mojang 파일 서버, 서버 주소를 조회하는 Cloudflare 또는 Google, App Store 또는 Google Play에 직접 연결합니다. 이 가운데 일부는 앱을 시작할 때처럼 자동으로 연결됩니다(2장).</li>
+      <li>앱은 여러분이 고른 마인크래프트 서버와 그 서버가 옮겨 보내는 서버(2장 (1)), 로그인에 필요한 Microsoft·Xbox·Mojang 서비스, 언어 파일을 받는 Mojang 파일 서버, 플레이어를 찾거나 얼굴을 보여 줄 때 묻는 Mojang 프로필 서비스, 서버 주소를 조회하는 Cloudflare 또는 Google, App Store 또는 Google Play에 직접 연결합니다. 이 가운데 일부는 앱을 시작할 때처럼 자동으로 연결됩니다(2장).</li>
       <li>광고, 분석 도구, 사용자 추적이 없습니다.</li>
       <li>유료 항목은 Apple 또는 Google을 통해서만 결제됩니다. 개발자는 카드나 결제 정보를 받지 않습니다.</li>
     </ul>
@@ -192,6 +210,8 @@
     <li>서버 로그인 플러그인(자동 로그인)용으로 입력한 비밀번호: 운영체제의 보안 저장소에 이 기기에만 보관</li>
     <li>자동으로 보내도록 설정한 메시지와 명령어(접속 시, 반복): 서버 설정과 함께 저장</li>
     <li>채팅 화면의 빠른 명령 버튼으로 저장한 명령어: 서버 설정과 함께 저장</li>
+    <li>'플레이어 찾기'로 찾은 최근 플레이어(최대 10명): 마인크래프트 이름, UUID, 찾은 시각</li>
+    <li>친구 목록(최대 100명): 플레이어 카드의 별로 추가한 플레이어의 마인크래프트 이름, UUID(Mojang 계정일 때), 추가한 날. 목록은 개발자나 다른 곳으로 보내지 않습니다('플레이어 얼굴 표시'가 켜져 있으면 얼굴을 보여 주려고 친구의 UUID로 Mojang 공개 프로필을 묻습니다. 2장 (3)). '친구가 들어오면 알림'은 앱에서 이미 접속해 있는 서버의 플레이어 목록만 보고 기기 안에서 알림을 만들며, 친구가 언제 접속했는지는 저장하지 않습니다</li>
     <li>내려받은 게임 언어 파일(채팅 번역 표시용)</li>
     <li>Pro를 구매했는지 여부(인터넷이 없어도 기능이 동작하도록 저장한 값과 마지막으로 바뀐 시각). 카드 정보, 주문 내역은 저장하지 않습니다</li>
     <li>MsgCraft 쿠폰 코드로 Pro를 켠 경우(Android): 그 코드, 코드에 맞는 마인크래프트 플레이어 UUID, 등록한 시각. 코드는 앱이 기기 안에서 확인하며 어디에도 보내지 않습니다</li>
@@ -199,10 +219,10 @@
   <p>앱은 Microsoft 계정 비밀번호를 보거나 저장하지 않습니다. 로그인은 Microsoft의 로그인 페이지에서 이루어집니다.</p>
 
   <h2 id="ko-2">2. 앱이 외부로 보내는 정보 (앱 동작과 여러분이 쓰는 기능을 위해서만)</h2>
-  <p>이 가운데 일부는 누르지 않아도 자동으로 연결됩니다. (1)은 앱이 다시 접속할 때, 서버가 여러분을 옮겨 보낼 때, 서버 목록이 화면에 나와 저장된 서버의 상태를 확인할 때입니다. (2)와 (4)는 이런 연결에 필요할 때, (3)과 (5)는 앱을 시작할 때입니다.</p>
+  <p>이 가운데 일부는 누르지 않아도 자동으로 연결됩니다. (1)은 앱이 다시 접속할 때, 서버가 여러분을 옮겨 보낼 때, 서버 목록이 화면에 나와 저장된 서버의 상태를 확인할 때, 서버 정보 화면을 열 때(상태가 없거나 1분 넘게 지났으면)입니다. (2)와 (4)는 이런 연결에 필요할 때입니다. (3)은 앱을 시작할 때, 그리고 '플레이어 얼굴 표시'가 켜져 있으면 얼굴이 화면에 나올 때(채팅, 플레이어 목록, 친구와 차단 목록, 플레이어 카드, '플레이어 찾기'의 최근 기록, '서버 목록에 접속자 얼굴 표시'를 켠 서버 목록 등)입니다. (5)는 앱을 시작할 때입니다.</p>
 
   <h3>(1) 여러분이 고른 마인크래프트 서버와 그 서버가 옮겨 보내는 서버</h3>
-  <p>서버에 접속하면 앱은 그 서버에 플레이어 이름, 플레이어 UUID, 여러분이 보내는 채팅과 명령어, 게임 클라이언트가 보내는 기본 설정(언어, 시야 거리 등), 채팅 서명용 공개 키를 보냅니다. 명령어를 입력하는 동안에는 자동 완성을 받으려고 지금까지 입력한 내용을, 보내지 않더라도 게임처럼 그 서버로 전송합니다. 해당 기능을 켠 경우, 자동 로그인을 켠 그 서버 주소에만 로그인 플러그인 비밀번호를, 자동으로 보내도록 설정한 메시지와 명령어를, 잠수 강퇴 방지를 위해 약 1분마다 팔 휘두르기 동작을 보냅니다. 로그인 플러그인을 쓰는 서버는 보통 통신을 암호화하지 않으므로 로그인 플러그인 비밀번호는 암호화되지 않은 채 그 서버로 전송됩니다. 다른 곳에서 쓰지 않는 비밀번호를 쓰세요. 서버 목록의 상태 확인(접속 인원 표시)도 그 서버에 연결하며, 서버 목록이 화면에 나오면 앱이 스스로 확인합니다.</p>
+  <p>서버에 접속하면 앱은 그 서버에 플레이어 이름, 플레이어 UUID, 여러분이 보내는 채팅과 명령어, 게임 클라이언트가 보내는 기본 설정(언어, 시야 거리, 다른 사람의 서버 목록에 내 이름을 보여도 되는지 등), 채팅 서명용 공개 키를 보냅니다. 명령어를 입력하는 동안에는 자동 완성을 받으려고 지금까지 입력한 내용을, 보내지 않더라도 게임처럼 그 서버로 전송합니다. 해당 기능을 켠 경우, 자동 로그인을 켠 그 서버 주소에만 로그인 플러그인 비밀번호를, 자동으로 보내도록 설정한 메시지와 명령어를, 잠수 강퇴 방지를 위해 약 1분마다 팔 휘두르기 동작을 보냅니다. 로그인 플러그인을 쓰는 서버는 보통 통신을 암호화하지 않으므로 로그인 플러그인 비밀번호는 암호화되지 않은 채 그 서버로 전송됩니다. 다른 곳에서 쓰지 않는 비밀번호를 쓰세요. 서버 목록의 상태 확인(접속 인원 표시)도 그 서버에 연결하며, 서버 목록이 화면에 나오면, 그리고 서버 정보 화면을 열 때 상태가 없거나 1분 넘게 지났으면 앱이 스스로 확인합니다. 서버가 상태 확인 응답에 접속 중인 플레이어의 이름 일부를 보내 주면, 앱은 서버 목록과 서버 정보 화면에서 보여 주려고 그 이름을 메모리에만 두며 저장하지 않습니다(앱을 닫으면 사라집니다).</p>
   <p>앱은 누르지 않아도 접속할 수 있습니다. 휴대폰이 앱을 멈춘 뒤 앱으로 돌아오면 다시 접속합니다. Pro의 자동 재접속은 기본으로 켜져 있어 연결이 끊기면 최대 5번 다시 시도하며, 강퇴 후 재접속은 직접 켠 경우에만 합니다. Android에서는 기본으로 백그라운드에서 접속을 유지하고 알림으로 상태를 표시하며, 연결을 끊거나 설정에서 끄면 멈춥니다.</p>
   <p>서버는 여러분을 다른 서버로 옮겨 보낼 수 있습니다(마인크래프트의 전송 기능). 앱은 자동으로 따라가며 채팅에 한 줄로 표시합니다. 새 서버는 같은 플레이어 정보와 처음 서버가 저장해 둔 쿠키를 받으며, 정품(온라인 모드) 서버라면 (2)의 접속 절차도 이루어집니다. 저장한 로그인 플러그인 비밀번호와 자동으로 보내는 메시지는 새 서버로 보내지 않습니다.</p>
   <p>이 서버들은 개발자와 무관한 제3자가 운영하며, 각 서버 운영자의 정책이 적용됩니다. 서버 운영자는 여러분의 IP 주소와 채팅을 볼 수 있습니다.</p>
@@ -214,12 +234,13 @@
   <p>정품(온라인 모드) 서버에 접속할 때는 마인크래프트 접속 토큰, 플레이어 UUID, 서버 해시도 <code>sessionserver.mojang.com</code> 으로 보냅니다.</p>
   <p>이 정보는 Microsoft 개인정보처리방침(<a href="https://privacy.microsoft.com">https://privacy.microsoft.com</a>)에 따라 처리됩니다.</p>
 
-  <h3>(3) Mojang 공개 파일 서버</h3>
+  <h3>(3) Mojang 공개 파일 서버와 플레이어 프로필</h3>
   <p>채팅 번역을 표시하려고 앱을 시작할 때 <code>piston-meta.mojang.com</code>, <code>resources.download.minecraft.net</code> 에서 게임 언어 파일을 내려받습니다. 약관에 동의하기 전인 첫 실행 때 받고, 그 뒤에는 약 일주일마다, 그리고 언어를 바꿀 때 받습니다. 이때 개인정보는 보내지 않습니다(통신 특성상 IP 주소는 전달됩니다).</p>
-  <p>'플레이어 얼굴 표시'를 켜 두면(기본으로 켜져 있음), 서버가 알려 준 플레이어 스킨 이미지와 내 계정의 스킨 이미지를 <code>textures.minecraft.net</code> 에서 내려받아 채팅 말풍선, 플레이어 목록, 계정 목록에 보여 줍니다. 차단 목록처럼 스킨 정보를 모르는 플레이어는 그 플레이어의 UUID로 <code>sessionserver.mojang.com</code> 에 공개 프로필을 물어 스킨을 찾습니다(토큰은 보내지 않습니다). 이때도 개인정보는 보내지 않습니다(IP 주소는 전달됩니다). 화면에 표시된 플레이어의 스킨 식별자와 얼굴 이미지는 이 기기에만 저장되며, 이 옵션을 끄면 삭제됩니다. 서버를 삭제하거나 채팅 기록을 지우면 그 서버의 정보도 삭제됩니다.</p>
+  <p>'플레이어 얼굴 표시'를 켜 두면(기본으로 켜져 있음), 서버가 알려 준 플레이어 스킨 이미지와 내 계정의 스킨 이미지를 <code>textures.minecraft.net</code> 에서 내려받아 채팅 말풍선, 플레이어 목록, 계정 목록, 플레이어 카드에 보여 줍니다. 플레이어 카드에서 '3D로 보기'를 누르면 그 플레이어의 스킨과 망토 이미지를 같은 곳에서 내려받아 3D로 보여 줍니다. 차단 목록과 친구 목록처럼 스킨 정보를 모르는 플레이어는 그 플레이어의 UUID로 <code>sessionserver.mojang.com</code> 에 공개 프로필을 물어 스킨(3D로 볼 때는 팔 모양과 망토도)을 찾습니다(토큰은 보내지 않습니다). Mojang 로그인을 쓰지 않는 서버가 만든 UUID(버전 3)는 Mojang에 묻지 않습니다. 서버 목록에서 서버를 길게 누르거나 서버 정보 화면에서 접속 인원을 눌러 접속자를 보거나, '서버 목록에 접속자 얼굴 표시'를 켜 두거나 플레이어 카드를 열면, 그 플레이어의 얼굴도 같은 방법으로 찾습니다. 이때도 개인정보는 보내지 않습니다(IP 주소는 전달됩니다). 화면에 표시된 플레이어의 스킨 식별자와 얼굴 이미지는 이 기기에만 저장되며(앱이 그 서버에 접속해 있지 않을 때 서버 목록과 서버 정보 화면에서 본 접속자 얼굴, 친구 목록의 얼굴, 플레이어 카드에서 공개 프로필로 찾은 얼굴, 3D로 보려고 받은 스킨과 망토 이미지는 저장하지 않고 메모리에만 둡니다. 앱이 그 서버에 접속해 있는 동안에는 접속자 창이 그 서버의 플레이어 목록을 보여 주며, 그 얼굴은 플레이어 목록의 얼굴처럼 저장됩니다), 이 옵션을 끄면 삭제됩니다. 서버를 삭제하거나 채팅 기록을 지우면 그 서버의 정보도 삭제됩니다.</p>
+  <p>'플레이어 찾기'(설정, 또는 플레이어 목록 검색의 'Mojang에서 찾기')에서 찾기를 누르면, 입력한 플레이어 이름은 <code>api.minecraftservices.com</code> 으로(연결되지 않거나 서버 오류가 나면 <code>api.mojang.com</code> 으로), UUID는 <code>sessionserver.mojang.com</code> 으로 보내 그 플레이어의 공개 프로필(이름과 UUID)을 받습니다. 누를 때만 보내며 입력하는 동안에는 보내지 않습니다. 토큰이나 여러분의 계정 정보는 보내지 않습니다(IP 주소는 전달됩니다). Mojang 로그인을 쓰지 않는 서버가 만든 UUID(버전 3)는 보내지 않습니다. 찾은 플레이어 최근 10명(이름, UUID, 찾은 시각)은 이 기기에만 저장되며 '기록 지우기'로 지울 수 있습니다. 찾은 플레이어와 최근 기록의 얼굴은 위와 같은 방법으로 찾아 메모리에만 둡니다('플레이어 얼굴 표시'가 켜져 있으면 이 화면을 열 때 누르지 않아도 최근 기록의 얼굴을 묻습니다).</p>
 
   <h3>(4) 서버 주소 조회(DNS-over-HTTPS)</h3>
-  <p>포트 없이(또는 기본 포트 25565를 적어) 도메인 이름으로 지정한 서버(다른 서버가 옮겨 보내는 서버 포함)에 접속하거나 서버 목록에서 상태를 확인할 때마다, 서버 주소(도메인 이름)의 SRV 레코드를 Cloudflare(<code>cloudflare-dns.com</code>)의 공개 DNS-over-HTTPS 서비스에 보내 조회합니다(응답이 없으면 Google(<code>dns.google</code>)). 이때 이 서비스들은 여러분의 IP 주소와 조회한 서버 주소를 보게 됩니다. IP 주소나 25565가 아닌 포트를 적은 주소는 조회하지 않습니다.</p>
+  <p>포트 없이(또는 기본 포트 25565를 적어) 도메인 이름으로 지정한 서버(다른 서버가 옮겨 보내는 서버 포함)에 접속하거나 서버 목록이나 서버 정보 화면에서 상태를 확인할 때마다, 서버 주소(도메인 이름)의 SRV 레코드를 Cloudflare(<code>cloudflare-dns.com</code>)의 공개 DNS-over-HTTPS 서비스에 보내 조회합니다(응답이 없으면 Google(<code>dns.google</code>)). 이때 이 서비스들은 여러분의 IP 주소와 조회한 서버 주소를 보게 됩니다. IP 주소나 25565가 아닌 포트를 적은 주소는 조회하지 않습니다.</p>
 
   <h3>(5) Apple, Google (앱 내 구입)</h3>
   <p>구매와 구매 복원은 기기의 App Store 또는 Google Play가 처리합니다. 결제 정보와 주문 내역은 Apple 또는 Google이 각자의 개인정보처리방침에 따라 처리합니다. 앱을 시작할 때, 구매 탭을 열 때, 앱으로 돌아올 때 앱은 구매 여부와 상관없이 스토어에 상품 가격과 구매 상태를 묻습니다. 개발자는 스토어 콘솔에서 판매 집계와 주문 정보를 볼 수 있지만 앱이 개발자에게 보내는 것은 없습니다. 구매 확인을 위한 별도의 서버나 외부 결제 대행 서비스를 쓰지 않습니다.</p>
@@ -227,14 +248,25 @@
   <h3>(6) 신고 메일과 문의 메일 (여러분이 직접 보낼 때만)</h3>
   <p>메시지나 플레이어를 신고하면 앱은 <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a> 앞으로 보낼 메일을 메일 앱에 미리 써 주거나, 같은 내용을 복사해 줍니다. 내용은 서버 이름과 주소, 신고 대상 플레이어의 이름과 UUID, 시각, 메시지이고, 추가 설명을 직접 적는 칸도 있습니다. 앱의 정보 화면에서 문의 이메일 주소를 누르면 같은 주소로 보낼 빈 메일이 메일 앱에 열리며, 내용은 여러분이 씁니다. 앱이 스스로 보내지는 않으며, 여러분이 확인하고 보내야 개발자에게 전달됩니다. 보내면 개발자는 그 내용과 여러분의 메일 주소, 보낸 사람 이름(메일 계정에 설정된 이름)을 받아 신고나 문의를 처리하는 데 씁니다. 필요하면 서버 운영자가 신고에 조치하는 데 필요한 내용(서버, 신고 대상 플레이어, 시각, 메시지)만 전달하며 여러분의 메일 주소와 보낸 사람 이름은 전달하지 않습니다. 메일은 개발자의 Gmail 편지함(Google, 국외)에 저장되며, 보관 기간은 4장에 적었습니다.</p>
 
+  <h3>(7) 디스코드 문의 (여러분이 직접 문의를 열 때만)</h3>
+  <p>앱의 정보 화면에서 "디스코드로 문의하기"를 누르면 MsgCraft 문의용 디스코드 서버의 초대 링크가 디스코드 앱이나 브라우저에서 열립니다. 앱은 링크만 열며, 링크에 여러분의 정보를 붙이거나 디스코드에 무언가를 보내지 않습니다. 디스코드는 선택이며, 같은 문의를 <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a> 으로 보내도 됩니다. 디스코드를 쓰지 않아도 앱 이용에는 아무 영향이 없습니다.</p>
+  <p>서버에서 문의, 건의, 제보 가운데 하나를 고르면 여러분과 개발자(운영진)만 볼 수 있는 비공개 채널이 열립니다. 개발자는 여러분의 디스코드 사용자 이름, 표시 이름, 프로필 사진, 사용자 ID와, 그 채널에 올린 메시지, 첨부 파일, 질문 칸의 답, 문의를 열고 닫은 시각을 받아 문의를 처리하는 데 씁니다. 그 채널에서는 여러분과 운영진이 서로의 디스코드 프로필을 볼 수 있고, 같은 서버에 들어온 다른 사람도 서버 멤버 목록에서 여러분의 이름과 프로필 사진을 볼 수 있습니다. 비밀번호나 로그인 코드는 보내지 마세요.</p>
+  <p>이 정보는 여러분이 메시지를 올릴 때 인터넷으로 다음 서비스에 전송되어 저장되거나 처리됩니다. 개발자가 보관하는 기간은 4장에 적었습니다.</p>
+  <ul>
+    <li>Discord Inc.(미국 및 Discord가 운영하는 국가, <a href="https://discord.com/privacy">https://discord.com/privacy</a>): 위 정보 전부. 문의 채널, 대화 기록 파일, 기록 채널의 메시지를 개발자가 지울 때까지 저장합니다.</li>
+    <li>Ticket Tool(운영 회사와 서버 위치는 공개되어 있지 않으며 약관은 미국 미주리주 법을 따릅니다, <a href="mailto:support@tickettool.xyz">support@tickettool.xyz</a>): 디스코드 사용자 이름과 사용자 ID, 질문 칸의 답, 문의 채널의 메시지. 문의 채널을 만들고 닫으며, 메시지를 읽어 대화 기록 파일을 만들고 위 디스코드 서버에 올립니다. Ticket Tool은 대화 기록의 사본을 보관하지 않는다고 밝히고 있지만, 그 밖의 정보를 얼마나 보관하는지는 자체 개인정보처리방침(<a href="https://tickettool.xyz/privacy-policy">https://tickettool.xyz/privacy-policy</a>)에 정해진 기간이 없습니다.</li>
+  </ul>
+  <p>디스코드 계정 자체의 정보는 Discord가 자체 개인정보처리방침에 따라 처리하며, 디스코드의 이용 연령 기준이 적용됩니다.</p>
+
   <p>위 (2)~(5)의 서비스는 국외(주로 미국)에 있습니다. 개발자가 정보를 넘기는 것이 아니라, 앱이 필요할 때 여러분의 기기가 직접 연결하며, 위에 적은 것처럼 일부는 자동으로 연결합니다.</p>
-  <p>개발자가 고른 외부 서비스는 (4)의 DNS 서비스와 (6)의 Gmail 편지함입니다. 이 서비스들에 대해 개발자는 제공 회사가 공개한 개인정보 보호 약속이 이 방침과 같은 수준의 보호를 제공한다고 보고 이에 의존합니다: Cloudflare(<a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</a>), Google Public DNS(<a href="https://developers.google.com/speed/public-dns/privacy">https://developers.google.com/speed/public-dns/privacy</a>), Google(<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). 위의 다른 서비스는 게임과 스토어 자체의 서비스이며 각자의 정책이 적용됩니다. 마인크래프트 서버 운영자는 이 약속에 포함되지 않습니다. 개발자가 고른 곳이 아니어서 그들이 정보를 어떻게 보호할지 약속할 수 없습니다.</p>
+  <p>개발자가 고른 외부 서비스 가운데 (4)의 DNS 서비스와 (6)의 Gmail 편지함에 대해서는, 제공 회사가 공개한 개인정보 보호 약속이 이 방침과 같은 수준의 보호를 제공한다고 보고 이에 의존합니다: Cloudflare(<a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</a>), Google Public DNS(<a href="https://developers.google.com/speed/public-dns/privacy">https://developers.google.com/speed/public-dns/privacy</a>), Google(<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). 위의 다른 서비스는 게임과 스토어 자체의 서비스이며 각자의 정책이 적용됩니다. 마인크래프트 서버 운영자는 이 약속에 포함되지 않습니다. 개발자가 고른 곳이 아니어서 그들이 정보를 어떻게 보호할지 약속할 수 없습니다.</p>
+  <p>(7)의 Discord와 Ticket Tool도 개발자가 고른 서비스이지만 위와 같은 약속은 하지 않습니다. 개발자가 이들과 따로 계약을 맺을 수 없어 이들이 공개한 약관과 개인정보처리방침(<a href="https://discord.com/privacy">https://discord.com/privacy</a>, <a href="https://tickettool.xyz/privacy-policy">https://tickettool.xyz/privacy-policy</a>)에 따릅니다. 이 방식이 걱정되면 디스코드 대신 메일로 문의해 주세요.</p>
 
   <h2 id="ko-3">3. 수집하지 않는 것</h2>
   <ul>
     <li>광고, 분석, 사용자 추적, 오류 보고 도구를 사용하지 않습니다.</li>
     <li>위치, 연락처, 사진, 마이크, 카메라에 접근하지 않습니다.</li>
-    <li>개발자 서버가 없으므로 개발자는 여러분의 채팅이나 계정 정보를 볼 수 없습니다. 여러분이 직접 보낸 신고 메일이나 문의 메일만 예외입니다(2장 (6)).</li>
+    <li>개발자 서버가 없으므로 개발자는 여러분의 채팅이나 계정 정보를 볼 수 없습니다. 여러분이 직접 보낸 신고 메일이나 문의 메일, 디스코드 문의만 예외입니다(2장 (6), (7)).</li>
     <li>알림은 기기 안에서 만드는 로컬 알림만 사용합니다(푸시 알림 서버 없음).</li>
     <li>앱 스토어(Google Play, App Store)는 자체 정책에 따라 다운로드 통계와 구매 정보 등을 수집할 수 있습니다.</li>
   </ul>
@@ -242,6 +274,8 @@
   <h2 id="ko-4">4. 보관 기간과 삭제</h2>
   <ul>
     <li>정보는 여러분이 지우기 전까지 기기에 남아 있습니다. 채팅 기록은 서버당 최근 2,000줄만 남습니다.</li>
+    <li>'플레이어 찾기'의 최근 기록(최대 10명)은 그 화면의 '기록 지우기'로 지울 수 있습니다.</li>
+    <li>친구 목록은 설정 &gt; 플레이어 &gt; '친구'에서 한 명씩 뺄 수 있습니다.</li>
     <li>앱 설정에서 계정을 삭제하면 그 계정의 로그인 정보와 서명 키가 기기에서 삭제됩니다.</li>
     <li>채팅 화면 메뉴에서 채팅 기록을 지울 수 있고, 서버를 삭제하면 그 서버의 채팅 기록도 함께 삭제됩니다. 계정을 삭제하면 그 계정의 로그인 정보가 삭제됩니다.</li>
     <li>구매 기록 자체는 Apple 또는 Google 계정에 남으며, 앱을 다시 설치하면 '구매 복원'으로 되찾을 수 있습니다.</li>
@@ -249,18 +283,20 @@
     <li>앱의 Microsoft 계정 접근 권한은 언제든지 <a href="https://account.live.com/consent/Manage">https://account.live.com/consent/Manage</a> 에서 철회할 수 있습니다.</li>
     <li>서버나 계정을 삭제하거나 서버 주소를 바꾸면 그 서버(계정)에 저장된 로그인 플러그인 비밀번호도 삭제됩니다. iPhone 키체인에 남는 경우는 위와 같이 앱을 다시 열 때 지웁니다.</li>
     <li>서버의 채팅 기록은 시스템 공유 창으로 다른 앱에 직접 공유할 수 있습니다. 앱이 스스로 어딘가로 보내지는 않습니다. 공유한 채팅 기록에는 그 서버 채팅에 있던 다른 플레이어의 이름과 메시지가 들어 있으니(차단한 플레이어는 빠짐) 적절한 곳에만 공유하세요.</li>
+    <li>저장한 서버의 이름과 주소, 그 서버를 앱에 추가하는 링크(https://msgcraft.github.io/add/)를 시스템 공유 창으로 다른 앱에 직접 보낼 수 있습니다(서버 카드 메뉴나 서버 정보 화면의 '공유'). 그 밖의 정보(계정, 다른 설정)는 들어가지 않으며, 앱이 스스로 어딘가로 보내지는 않습니다. 링크의 웹 페이지는 링크의 '#' 뒤에 든 이름과 주소를 링크를 연 사람의 브라우저 안에서만 읽고, 저장하거나 어디로도 보내지 않습니다('#' 뒤의 내용은 웹 서버로 전송되지 않습니다).</li>
     <li>마인크래프트 서버에 이미 보낸 채팅은 그 서버 운영자가 보관할 수 있으며, 개발자는 이를 지울 수 없습니다. 해당 서버 운영자에게 문의하세요.</li>
     <li>여러분이 보낸 신고 메일과 문의 메일(2장 (6))은 개발자의 Gmail 편지함에 신고나 문의 처리가 끝난 날부터 1년 동안 보관한 뒤 편지함에서 삭제합니다. 더 일찍 삭제하길 원하면 <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a> 으로 요청할 수 있습니다. 이미 서버 운영자에게 전달한 내용은 그 운영자가 보관하므로 해당 운영자에게 문의하세요.</li>
+    <li>디스코드 문의(2장 (7))는 처리가 끝나면 문의 채널을 삭제합니다. 운영진만 볼 수 있는 채널에 남긴 대화 기록 파일과 기록 메시지는 처리가 끝난 날부터 1년 동안 보관한 뒤 삭제합니다. 더 일찍 삭제하길 원하면 문의 채널에서 또는 <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a> 으로 요청할 수 있습니다. 디스코드 계정과 다른 곳에 올린 메시지는 Discord가 관리하므로 디스코드에서 지우거나 Discord에 요청하세요.</li>
   </ul>
 
   <h2 id="ko-5">5. 아동</h2>
   <p>이 앱은 13세 미만 아동을 대상으로 하지 않습니다. 대한민국에서 만 14세 미만 이용자는 법정대리인의 동의를 받아 이용해야 합니다.</p>
 
   <h2 id="ko-6">6. 안전 조치</h2>
-  <p>로그인 정보는 운영체제 보안 저장소에 저장합니다. Microsoft·Xbox·Mojang과의 통신은 HTTPS로 암호화되고, 정품(온라인 모드) 서버와의 통신은 마인크래프트 프로토콜의 암호화를 사용합니다. 앱 기록(로그)과 채팅 기록에 로그인 토큰이나 서버 비밀번호를 남기지 않습니다.</p>
+  <p>로그인 정보는 운영체제 보안 저장소에 저장합니다. Microsoft·Xbox·Mojang과의 통신은 HTTPS로 암호화되고, 정품(온라인 모드) 서버와의 통신은 마인크래프트 프로토콜의 암호화를 사용합니다. 앱 기록(로그)과 채팅 기록에 로그인 토큰이나 서버 비밀번호를 남기지 않습니다. 디스코드 문의 채널은 문의한 사람과 운영진만, 대화 기록과 기록 채널은 운영진만 볼 수 있게 설정하고(Ticket Tool 봇은 동작에 필요한 권한만 가집니다), 운영진의 디스코드 계정은 2단계 인증을 사용합니다. 대화 기록을 Google 드라이브 등 다른 곳에 따로 저장하지 않습니다.</p>
 
   <h2 id="ko-7">7. 여러분의 권리</h2>
-  <p>앱이 저장한 정보는 기기에만 있으므로 열람·정정·삭제는 앱 안에서 직접 하실 수 있습니다. 여러분이 보낸 신고 메일과 문의 메일은 예외로, 개발자가 가진 사본의 열람·정정·삭제는 아래 연락처로 요청하세요. 만 14세 미만 이용자의 법정대리인은 같은 권리를, 기기의 앱에서 또는 아래 연락처로 메일을 보내 대신 행사할 수 있습니다. 구매와 주문 기록은 Apple 또는 Google이 관리하므로 앱에서 지울 수 없습니다. 해당 회사의 계정 설정이나 고객 지원으로 요청하세요. 개발자가 스토어 콘솔에서 볼 수 있는 주문 정보에 관한 문의를 포함해, 궁금한 점은 아래 연락처로 문의하세요.</p>
+  <p>앱이 저장한 정보는 기기에만 있으므로 열람·정정·삭제는 앱 안에서 직접 하실 수 있습니다. 여러분이 보낸 신고 메일과 문의 메일, 디스코드 문의는 예외로, 개발자가 가진 사본의 열람·정정·삭제는 아래 연락처로(디스코드 문의는 문의 채널에서도) 요청하세요. 만 14세 미만 이용자의 법정대리인은 같은 권리를, 기기의 앱에서 또는 아래 연락처로 메일을 보내 대신 행사할 수 있습니다. 구매와 주문 기록은 Apple 또는 Google이 관리하므로 앱에서 지울 수 없습니다. 해당 회사의 계정 설정이나 고객 지원으로 요청하세요. 개발자가 스토어 콘솔에서 볼 수 있는 주문 정보에 관한 문의를 포함해, 궁금한 점은 아래 연락처로 문의하세요.</p>
 
   <h2 id="ko-8">8. 개인정보 보호 책임자 및 문의</h2>
   <p>MsgCraft 개발자 / <a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></p>

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'sha256-5WF6bItHuscVPtyw8MtP7MS63oaxd6J3SOq1fnq2G4A='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Shared server / 공유받은 서버 - MsgCraft</title>
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f7f8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0d0f">
+<link rel="icon" type="image/png" sizes="48x48" href="../icon-48.png">
+<link rel="apple-touch-icon" href="../icon-192.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-inner">
+    <a class="brand" href="../"><img src="../icon-48.png" alt="" width="28" height="28">MsgCraft</a>
+    <nav class="langs" aria-label="Language / 언어">
+      <a href="#en" lang="en" id="lang-en">English</a>
+      <a href="#ko" lang="ko" id="lang-ko">한국어</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lang-block" id="en" lang="en">
+  <p class="eyebrow">Shared server</p>
+  <p id="loading-en">Reading the link. If this stays, turn on JavaScript in your browser.</p>
+
+  <div id="ok-en" hidden>
+    <h1>A server for you</h1>
+    <p class="lede">Someone sent you a Minecraft: Java Edition server.</p>
+    <div class="server-card">
+      <p class="server-name" id="name-en"></p>
+      <p class="server-address">Address <code id="address-en"></code></p>
+      <div class="share-actions">
+        <button type="button" class="button" id="copy-en">Copy address</button>
+        <a class="button button-primary" id="open-en" href="#en">Open in the app</a>
+      </div>
+      <p class="copy-status" id="status-en" role="status" aria-live="polite" data-ok="Address copied." data-fail="Could not copy. Press and hold the address to copy it."></p>
+    </div>
+
+    <h2>How to join</h2>
+    <ul>
+      <li>In the game: Multiplayer, then Add Server, and paste the address as the server address.</li>
+      <li>In the MsgCraft app: “Open in the app” opens Add server with the name and address filled in. Nothing is saved until you tap “Add server”.</li>
+    </ul>
+    <p class="status"><strong>MsgCraft is coming to the App Store and Google Play soon.</strong> Until you have the app, “Open in the app” cannot open anything (your browser may show an error).</p>
+  </div>
+
+  <div id="bad-en" hidden>
+    <h1>This link is incomplete</h1>
+    <p>The server address is missing or not valid. Ask the person who sent it to share the server again.</p>
+  </div>
+
+  <p class="disclaimer">The name and address come from whoever made the link; MsgCraft has not checked them. This page reads them from the part of the link after # in your browser only. That part is never sent to the web server, and this page stores and sends nothing.</p>
+</section>
+
+<section class="lang-block" id="ko" lang="ko">
+  <p class="eyebrow">서버 공유</p>
+  <p id="loading-ko">링크를 읽는 중입니다. 이 문장이 계속 보이면 브라우저에서 자바스크립트를 켜 주세요.</p>
+
+  <div id="ok-ko" hidden>
+    <h1>공유받은 서버</h1>
+    <p class="lede">마인크래프트: 자바 에디션 서버를 공유받았습니다.</p>
+    <div class="server-card">
+      <p class="server-name" id="name-ko"></p>
+      <p class="server-address">주소 <code id="address-ko"></code></p>
+      <div class="share-actions">
+        <button type="button" class="button" id="copy-ko">주소 복사</button>
+        <a class="button button-primary" id="open-ko" href="#ko">앱에서 열기</a>
+      </div>
+      <p class="copy-status" id="status-ko" role="status" aria-live="polite" data-ok="주소를 복사했습니다." data-fail="복사하지 못했습니다. 주소를 길게 눌러 복사하세요."></p>
+    </div>
+
+    <h2>들어가는 방법</h2>
+    <ul>
+      <li>게임에서: 멀티플레이 → 서버 추가를 누르고 서버 주소 칸에 붙여 넣으세요.</li>
+      <li>MsgCraft 앱에서: ‘앱에서 열기’를 누르면 이름과 주소가 채워진 서버 추가 화면이 열립니다. ‘서버 추가’를 눌러야 저장됩니다.</li>
+    </ul>
+    <p class="status"><strong>MsgCraft는 곧 App Store와 Google Play에 나옵니다.</strong> 앱이 없으면 ‘앱에서 열기’가 동작하지 않습니다(브라우저에 오류가 나올 수 있음).</p>
+  </div>
+
+  <div id="bad-ko" hidden>
+    <h1>링크가 완전하지 않습니다</h1>
+    <p>서버 주소가 빠졌거나 올바르지 않습니다. 링크를 보낸 사람에게 서버를 다시 공유해 달라고 하세요.</p>
+  </div>
+
+  <p class="disclaimer">이름과 주소는 링크를 만든 사람이 정한 것이며 MsgCraft가 확인한 것이 아닙니다. 이 페이지는 링크의 # 뒤에 있는 이름과 주소를 이 브라우저 안에서만 읽습니다. # 뒤의 내용은 웹 서버로 가지 않으며, 이 페이지는 아무것도 저장하거나 보내지 않습니다.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <ul class="foot-links">
+      <li><a href="../">Home</a> · <a href="../#ko" lang="ko">홈</a></li>
+      <li><a href="../privacy/#en">Privacy policy</a> · <a href="../privacy/#ko" lang="ko">개인정보처리방침</a></li>
+      <li><a href="../terms/#en">Terms of use</a> · <a href="../terms/#ko" lang="ko">이용약관</a></li>
+      <li><a href="mailto:msgcraft1@gmail.com">msgcraft1@gmail.com</a></li>
+    </ul>
+    <p class="foot-note">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+    <p class="foot-note" lang="ko">마인크래프트 공식 제품이 아닙니다. Mojang 또는 Microsoft가 승인하지 않았으며 이들과 관련이 없습니다.</p>
+    <p class="foot-note">Minecraft is a trademark of Mojang Synergies AB.</p>
+    <p class="foot-note" lang="ko">Minecraft는 Mojang Synergies AB의 상표입니다.</p>
+  </div>
+</footer>
+
+<script>
+// Reads the server from the link's # part (never sent to the web server) and shows it with textContent only. The same
+// checks as the app (src/ui/logic/serverShare.ts): the name is cleaned and cut to 64, the address must be a plain host
+// name, IPv4 or [IPv6] with an optional port; the default port 25565 is left out. "Open in the app" is
+// msgcraft://add?n=…&a=…. One language is shown at a time; the switch does not touch the # (it holds the server).
+// When this script changes, its sha256 in the Content-Security-Policy above must change too (test/unit/ui/shareSitePage.test.ts).
+(function () {
+  'use strict';
+  var MAX_LINK = 2048;
+  var MAX_PARAMS = 16;
+  var MAX_NAME = 64;
+  var MAX_ADDRESS = 300;
+  var MAX_HOST = 253;
+  var DEFAULT_PORT = 25565;
+  var LANGS = ['en', 'ko'];
+  var INVISIBLE = [[0x0000, 0x001f], [0x007f, 0x009f], [0x00ad, 0x00ad], [0x061c, 0x061c], [0x115f, 0x1160], [0x17b4, 0x17b5], [0x180e, 0x180e], [0x200b, 0x200f], [0x2028, 0x202e], [0x2060, 0x206f], [0x3164, 0x3164], [0xfeff, 0xfeff], [0xffa0, 0xffa0], [0xfff0, 0xfff8]];
+  var REPLACEMENT = String.fromCharCode(0xfffd);
+  var ADDRESS_FORM = /^(?:\[([0-9A-Fa-f:.]+)\]|([A-Za-z0-9_.-]+))(?::(\d{1,5}))?$/;
+  var HOST_LABEL = /^[a-z0-9_](?:[a-z0-9_-]{0,61}[a-z0-9_])?$/;
+  var current = null;
+
+  function byId(id) {
+    return document.getElementById(id);
+  }
+
+  function invisible(code) {
+    for (var i = 0; i < INVISIBLE.length; i++) {
+      if (code >= INVISIBLE[i][0] && code <= INVISIBLE[i][1]) return true;
+    }
+    return false;
+  }
+
+  function decode(s) {
+    try {
+      return decodeURIComponent(s.replace(/\+/g, ' '));
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function readHash(hash) {
+    var out = Object.create(null);
+    var text = String(hash || '');
+    if (text.length > MAX_LINK) return out;
+    var parts = text.replace(/^#/, '').split('&').slice(0, MAX_PARAMS);
+    for (var i = 0; i < parts.length; i++) {
+      var part = parts[i];
+      if (!part) continue;
+      var eq = part.indexOf('=');
+      var key = decode(eq >= 0 ? part.slice(0, eq) : part);
+      var value = decode(eq >= 0 ? part.slice(eq + 1) : '');
+      if (key === null || value === null || key in out) continue;
+      out[key] = value;
+    }
+    return out;
+  }
+
+  function cleanName(raw) {
+    if (typeof raw !== 'string') return '';
+    var s = raw.slice(0, MAX_NAME * 8);
+    var out = '';
+    for (var i = 0; i < s.length; i++) {
+      var c = s.charCodeAt(i);
+      if (c >= 0xd800 && c <= 0xdbff) {
+        var next = s.charCodeAt(i + 1);
+        if (next >= 0xdc00 && next <= 0xdfff) {
+          out += s.charAt(i) + s.charAt(i + 1);
+          i++;
+        } else out += REPLACEMENT;
+      } else if (c >= 0xdc00 && c <= 0xdfff) out += REPLACEMENT;
+      else out += invisible(c) ? ' ' : s.charAt(i);
+    }
+    out = out.replace(/\s+/g, ' ').trim();
+    if (out.length > MAX_NAME) {
+      var cut = MAX_NAME;
+      var last = out.charCodeAt(cut - 1);
+      if (last >= 0xd800 && last <= 0xdbff) cut--;
+      out = out.slice(0, cut);
+    }
+    return out.trim();
+  }
+
+  function checkAddress(raw) {
+    if (typeof raw !== 'string') return null;
+    var a = raw.trim();
+    if (a.length === 0 || a.length > MAX_ADDRESS) return null;
+    var m = ADDRESS_FORM.exec(a);
+    if (!m) return null;
+    var host;
+    if (m[1] !== undefined) {
+      if (m[1].indexOf(':') < 0) return null;
+      host = '[' + m[1].toLowerCase() + ']';
+    } else {
+      host = m[2].toLowerCase();
+      var bare = host.charAt(host.length - 1) === '.' ? host.slice(0, -1) : host;
+      if (bare.length === 0 || bare.length > MAX_HOST) return null;
+      var labels = bare.split('.');
+      for (var i = 0; i < labels.length; i++) {
+        if (!HOST_LABEL.test(labels[i])) return null;
+      }
+    }
+    var port = m[3] === undefined ? undefined : Number(m[3]);
+    if (port !== undefined && (port < 1 || port > 65535)) return null;
+    return port === undefined || port === DEFAULT_PORT ? host : host + ':' + port;
+  }
+
+  function appLink(name, address) {
+    var query = [];
+    if (name) query.push('n=' + encodeURIComponent(name));
+    query.push('a=' + encodeURIComponent(address));
+    return 'msgcraft://add?' + query.join('&');
+  }
+
+  function render() {
+    var params = readHash(window.location.hash);
+    var address = checkAddress(params.a);
+    var name = cleanName(params.n);
+    current = address;
+    for (var i = 0; i < LANGS.length; i++) {
+      var lang = LANGS[i];
+      byId('loading-' + lang).hidden = true;
+      byId('ok-' + lang).hidden = address === null;
+      byId('bad-' + lang).hidden = address !== null;
+      byId('status-' + lang).textContent = '';
+      if (address === null) continue;
+      byId('name-' + lang).textContent = name || address;
+      byId('address-' + lang).textContent = address;
+      byId('open-' + lang).setAttribute('href', appLink(name, address));
+    }
+  }
+
+  function selectAndCopy(el) {
+    try {
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      return document.execCommand('copy') === true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function copy(lang) {
+    if (current === null) return;
+    var status = byId('status-' + lang);
+    var say = function (ok) {
+      status.textContent = status.getAttribute(ok ? 'data-ok' : 'data-fail') || '';
+    };
+    var fallback = function () {
+      say(selectAndCopy(byId('address-' + lang)));
+    };
+    var clipboard = window.navigator.clipboard;
+    if (clipboard && typeof clipboard.writeText === 'function') {
+      clipboard.writeText(current).then(function () {
+        say(true);
+      }, fallback);
+    } else fallback();
+  }
+
+  function setLang(lang) {
+    for (var i = 0; i < LANGS.length; i++) {
+      byId(LANGS[i]).hidden = LANGS[i] !== lang;
+      byId('lang-' + LANGS[i]).setAttribute('aria-current', LANGS[i] === lang ? 'true' : 'false');
+    }
+    document.documentElement.setAttribute('lang', lang);
+  }
+
+  function firstLang() {
+    var nav = window.navigator;
+    var list = nav.languages && nav.languages.length ? nav.languages : [nav.language || ''];
+    for (var i = 0; i < list.length; i++) {
+      var tag = String(list[i]).toLowerCase();
+      if (tag.indexOf('ko') === 0) return 'ko';
+      if (tag.indexOf('en') === 0) return 'en';
+    }
+    return 'en';
+  }
+
+  function wire(lang) {
+    byId('copy-' + lang).addEventListener('click', function () {
+      copy(lang);
+    });
+    byId('lang-' + lang).addEventListener('click', function (event) {
+      event.preventDefault();
+      setLang(lang);
+    });
+  }
+
+  for (var i = 0; i < LANGS.length; i++) wire(LANGS[i]);
+  window.addEventListener('hashchange', render);
+  setLang(firstLang());
+  render();
+})();
+</script>
+
+</body>
+</html>
