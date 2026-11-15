@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'sha256-5WF6bItHuscVPtyw8MtP7MS63oaxd6J3SOq1fnq2G4A='; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'sha256-/OcNSofazmmCH9dlrpzrL74pz5oJslsj8w8WygNmhAU='; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex, nofollow">
-<title>Shared server / 공유받은 서버 - MsgCraft</title>
+<title>Shared server / 공유받은 서버 - Telecraft</title>
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f7f8">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0d0f">
 <link rel="icon" type="image/png" sizes="48x48" href="../icon-48.png">
@@ -17,7 +17,7 @@
 
 <header class="bar">
   <div class="bar-inner">
-    <a class="brand" href="../"><img src="../icon-48.png" alt="" width="28" height="28">MsgCraft</a>
+    <a class="brand" href="../"><img src="../icon-48.png" alt="" width="28" height="28">Telecraft</a>
     <nav class="langs" aria-label="Language / 언어">
       <a href="#en" lang="en" id="lang-en">English</a>
       <a href="#ko" lang="ko" id="lang-ko">한국어</a>
@@ -47,9 +47,9 @@
     <h2>How to join</h2>
     <ul>
       <li>In the game: Multiplayer, then Add Server, and paste the address as the server address.</li>
-      <li>In the MsgCraft app: “Open in the app” opens Add server with the name and address filled in. Nothing is saved until you tap “Add server”.</li>
+      <li>In the Telecraft app: “Open in the app” opens Add server with the name and address filled in. Nothing is saved until you tap “Add server”.</li>
     </ul>
-    <p class="status"><strong>MsgCraft is coming to the App Store and Google Play soon.</strong> Until you have the app, “Open in the app” cannot open anything (your browser may show an error).</p>
+    <p class="status"><strong>Telecraft is coming to the App Store and Google Play soon.</strong> Until you have the app, “Open in the app” cannot open anything (your browser may show an error).</p>
   </div>
 
   <div id="bad-en" hidden>
@@ -57,7 +57,7 @@
     <p>The server address is missing or not valid. Ask the person who sent it to share the server again.</p>
   </div>
 
-  <p class="disclaimer">The name and address come from whoever made the link; MsgCraft has not checked them. This page reads them from the part of the link after # in your browser only. That part is never sent to the web server, and this page stores and sends nothing.</p>
+  <p class="disclaimer">The name and address come from whoever made the link; Telecraft has not checked them. This page reads them from the part of the link after # in your browser only. That part is never sent to the web server, and this page stores and sends nothing.</p>
 </section>
 
 <section class="lang-block" id="ko" lang="ko">
@@ -80,9 +80,9 @@
     <h2>들어가는 방법</h2>
     <ul>
       <li>게임에서: 멀티플레이 → 서버 추가를 누르고 서버 주소 칸에 붙여 넣으세요.</li>
-      <li>MsgCraft 앱에서: ‘앱에서 열기’를 누르면 이름과 주소가 채워진 서버 추가 화면이 열립니다. ‘서버 추가’를 눌러야 저장됩니다.</li>
+      <li>Telecraft 앱에서: ‘앱에서 열기’를 누르면 이름과 주소가 채워진 서버 추가 화면이 열립니다. ‘서버 추가’를 눌러야 저장됩니다.</li>
     </ul>
-    <p class="status"><strong>MsgCraft는 곧 App Store와 Google Play에 나옵니다.</strong> 앱이 없으면 ‘앱에서 열기’가 동작하지 않습니다(브라우저에 오류가 나올 수 있음).</p>
+    <p class="status"><strong>Telecraft는 곧 App Store와 Google Play에 나옵니다.</strong> 앱이 없으면 ‘앱에서 열기’가 동작하지 않습니다(브라우저에 오류가 나올 수 있음).</p>
   </div>
 
   <div id="bad-ko" hidden>
@@ -90,7 +90,7 @@
     <p>서버 주소가 빠졌거나 올바르지 않습니다. 링크를 보낸 사람에게 서버를 다시 공유해 달라고 하세요.</p>
   </div>
 
-  <p class="disclaimer">이름과 주소는 링크를 만든 사람이 정한 것이며 MsgCraft가 확인한 것이 아닙니다. 이 페이지는 링크의 # 뒤에 있는 이름과 주소를 이 브라우저 안에서만 읽습니다. # 뒤의 내용은 웹 서버로 가지 않으며, 이 페이지는 아무것도 저장하거나 보내지 않습니다.</p>
+  <p class="disclaimer">이름과 주소는 링크를 만든 사람이 정한 것이며 Telecraft가 확인한 것이 아닙니다. 이 페이지는 링크의 # 뒤에 있는 이름과 주소를 이 브라우저 안에서만 읽습니다. # 뒤의 내용은 웹 서버로 가지 않으며, 이 페이지는 아무것도 저장하거나 보내지 않습니다.</p>
 </section>
 
 </main>
@@ -114,7 +114,7 @@
 // Reads the server from the link's # part (never sent to the web server) and shows it with textContent only. The same
 // checks as the app (src/ui/logic/serverShare.ts): the name is cleaned and cut to 64, the address must be a plain host
 // name, IPv4 or [IPv6] with an optional port; the default port 25565 is left out. "Open in the app" is
-// msgcraft://add?n=…&a=…. One language is shown at a time; the switch does not touch the # (it holds the server).
+// telecraft://add?n=…&a=… (the old msgcraft:// still opens the app). One language is shown at a time; the switch does not touch the # (it holds the server).
 // When this script changes, its sha256 in the Content-Security-Policy above must change too (test/unit/ui/shareSitePage.test.ts).
 (function () {
   'use strict';
@@ -220,7 +220,7 @@
     var query = [];
     if (name) query.push('n=' + encodeURIComponent(name));
     query.push('a=' + encodeURIComponent(address));
-    return 'msgcraft://add?' + query.join('&');
+    return 'telecraft://add?' + query.join('&');
   }
 
   function render() {
